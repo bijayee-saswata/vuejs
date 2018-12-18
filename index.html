@@ -17,6 +17,9 @@
         <a v-bind:href="website">click</a>
         <button v-on:click="add">add</button>
         <p>number: {{ num }}</p>
+        <div id="canvas" v-on:mousemove="update">
+            {{x}},{{y}}
+        </div>
     </div>
     <script src="app.js"></script>
 </body>

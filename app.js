@@ -3,7 +3,9 @@ new Vue({
     data: {
         name : 'hello',
         website: 'www.google.com',
-        num: 25
+        num: 25,
+        x: 0,
+        y: 0
     },
     methods: {
         greet : function(msg){
@@ -11,6 +13,10 @@ new Vue({
         },
         add : function(){
             return this.num++;
-        } 
+        } ,
+        update: function(event){
+            this.x = event.offsetX,
+            this.y = event.offsetY
+        }
     }
 });
