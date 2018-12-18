@@ -13,6 +13,10 @@
 <body>
     <div id="vue-app">
         <h1>{{ name }}</h1>
+        <h1>{{ greet('unknown') }}</h1>
+        <a v-bind:href="website">click</a>
+        <button v-on:click="add">add</button>
+        <p>number: {{ num }}</p>
     </div>
     <script src="app.js"></script>
 </body>
