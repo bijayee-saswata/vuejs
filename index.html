@@ -21,6 +21,13 @@
         <button v-on:click="b++">sub</button>
         <p>{{ add }}</p>
         <p>{{ sub }}</p>
+
+        <button v-on:click="availabel = !availabel">aval</button>
+        <button v-on:click="nearby = !nearby">near</button><br>
+        <div v-bind:class="compClasses">
+            <span>alternate</span>
+        </div>
+
     </div>
     <script src="app.js"></script>
 </body>

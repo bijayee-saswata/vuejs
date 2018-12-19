@@ -4,3 +4,16 @@
     text-align: center;
     border: 2px solid aqua;
 }
+span{
+    background-color: red;
+    padding: 0 10px 0 10px;
+    margin-top: 20px;
+}
+.availabel span{
+    background-color: green;
+}
+
+.nearby span:after{
+    content : "nearby";
+    margin-left: 10px;
+}

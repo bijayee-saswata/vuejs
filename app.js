@@ -1,7 +1,8 @@
 new Vue({
     el: '#vue-app',
     data: {
-        
+        availabel: true,
+        nearby : false,
         x: 0,
         y: 0,
         a: 0,
@@ -23,6 +24,13 @@ new Vue({
         sub : function(){
             console.log("b");
             return this.b;      
+        },
+
+        compClasses: function(){
+            return {
+                availabel : this.availabel,
+                nearby : this.nearby
+            }
         }
     }
 });
