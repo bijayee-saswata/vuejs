@@ -1,22 +1,28 @@
 new Vue({
     el: '#vue-app',
     data: {
-        name : 'hello',
-        website: 'www.google.com',
-        num: 25,
+        
         x: 0,
-        y: 0
+        y: 0,
+        a: 0,
+        b: 0
     },
     methods: {
-        greet : function(msg){
-            return "From : "+ msg+ " says "+ this.name ;
-        },
-        add : function(){
-            return this.num++;
-        } ,
+
         update: function(event){
             this.x = event.offsetX,
             this.y = event.offsetY
+        }
+        
+    },
+    computed:{
+        add : function(){
+            console.log("a");
+            return this.a;        
+        },
+        sub : function(){
+            console.log("b");
+            return this.b;      
         }
     }
 });

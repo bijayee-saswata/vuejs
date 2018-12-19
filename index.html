@@ -12,14 +12,15 @@
 </head>
 <body>
     <div id="vue-app">
-        <h1>{{ name }}</h1>
-        <h1>{{ greet('unknown') }}</h1>
-        <a v-bind:href="website">click</a>
-        <button v-on:click="add">add</button>
-        <p>number: {{ num }}</p>
         <div id="canvas" v-on:mousemove="update">
             {{x}},{{y}}
         </div>
+        <br>
+    
+        <button v-on:click="a++">add</button>
+        <button v-on:click="b++">sub</button>
+        <p>{{ add }}</p>
+        <p>{{ sub }}</p>
     </div>
     <script src="app.js"></script>
 </body>
