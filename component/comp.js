@@ -14,10 +14,13 @@ Vue.component('greet', {
 var one = new Vue({
     el: '#v-app-one',
     data:{
-
+        food: 'food'
     },
     methods:{
-
+        show: function(){
+            console.log(this.$refs.input.value);
+            this.food = this.$refs.input.value;
+        }
     }
 });
 var two = new Vue({

@@ -11,10 +11,15 @@
 <body>
     <div id="v-app-one">
         <greet></greet>
+        <input type="text" ref="input">
+    <button v-on:click="show()">submit</button>
+    <p>your fav food: {{ food }}</p>
     </div>
     <div id="v-app-two">
         <greet></greet>
     </div>
+
+    
     <script src="comp.js"></script>
 </body>
 </html>
