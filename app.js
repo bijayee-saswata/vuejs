@@ -6,7 +6,16 @@ new Vue({
         x: 0,
         y: 0,
         a: 0,
-        b: 0
+        b: 0,
+        error: false,
+        Success:false,
+        items:['one','two','three'],
+        objs: [
+            {name:'abc',age:20},
+            {name:'bcd',age:25},
+            {name:'pqr',age:21}
+        ]
+
     },
     methods: {
 

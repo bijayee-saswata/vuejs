@@ -28,6 +28,20 @@
             <span>alternate</span>
         </div>
 
+        <div class="conditionals">
+            <button v-on:click="error = !error">Toggle error</button>
+            <button v-on:click="Success = !Success">Toggle error</button>
+            <p v-if="error">error</p>
+            <p v-else-if="Success">Success</p>
+        </div>
+        <div class="loop">
+            <template v-for="(item,index) in items">
+               <br> {{ index }}-{{ item }}
+            </template><br>
+            <template v-for="(obj,index) in objs">
+               <br> {{ index }}-{{ obj.name}} -- {{ obj.age }}
+            </template>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
